@@ -1,0 +1,34 @@
+/* src/components/TeamMenu.css */
+.team-menu {
+    display: flex;
+    overflow-x: auto;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .team-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .team-menu-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  
+  .team-menu-item span {
+    font-size: 0.9em;
+    color: #333;
+  }
+  
