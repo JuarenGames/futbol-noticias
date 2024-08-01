@@ -1,0 +1,52 @@
+/* src/components/MusicPlayer.css */
+
+.music-player {
+    width: 100%;
+    max-width: 200px; /* Tamaño máximo para pantallas grandes */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: fixed;
+    right: 0;
+    top: 100px; /* Ajusta según el diseño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; /* Asegúrate de que esté visible en pantallas grandes */
+}
+
+.music-player h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.music-player iframe {
+    width: 100%;
+    height: 180px; /* Ajusta la altura según el diseño */
+    margin-bottom: 15px;
+}
+
+.track-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.track-list li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.track-list li:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 767px) {
+    .music-player {
+        max-width: 100%; /* Ajusta al ancho de pantalla en móviles */
+        width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+        position: relative; /* Cambia a relativo en pantallas pequeñas */
+        top: auto; /* Sin posición fija en pantallas pequeñas */
+        margin: 0; /* Sin margen en pantallas pequeñas */
+    }
+}
