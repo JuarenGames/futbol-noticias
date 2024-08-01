@@ -1,28 +1,48 @@
-/* src/components/NewsCard.css */
 .news-card {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .news-card-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  .news-card-content {
-    padding: 10px 15px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Ajusta según tus necesidades */
+  margin: 15px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.news-card-image {
+  width: 100%;
+  height: 180px; /* Ajusta la altura según tus necesidades */
+  object-fit: cover;
+}
+
+.news-card-content {
+  padding: 15px;
+}
+
+.news-card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.news-card-description {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 600px) {
   .news-card-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 10px 0;
+    font-size: 1.1em;
   }
-  
+
   .news-card-description {
-    font-size: 1em;
-    color: #555;
+    font-size: 0.9em;
   }
-  
+
+  .news-card-image {
+    height: 150px; /* Ajusta la altura para pantallas pequeñas */
+  }
+}
